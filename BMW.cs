@@ -17,7 +17,6 @@ namespace Polymorphism
             this.Model = model;
         }
 
-
         public new void ShowDetails()
         {
             Console.WriteLine("Brand " + brand + " HP: " + HP + " color:" + Colour);

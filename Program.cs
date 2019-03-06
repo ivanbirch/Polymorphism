@@ -23,6 +23,10 @@ namespace Polymorphism
             Car audiA3 = new Audi(100, "green", "A3");
             bmwZ3.ShowDetails();
             audiA3.ShowDetails();
+            bmwZ3.SetCarIDInfo(1234, "me");
+            audiA3.SetCarIDInfo(1235, "Frank");
+            bmwZ3.GetCarIDInfo();
+            audiA3.GetCarIDInfo();
 
             BMW bmwM5 = new BMW(330, "white", "M5");
             bmwM5.ShowDetails();
@@ -30,6 +34,8 @@ namespace Polymorphism
             Car carB = (Car)bmwM5;
             carB.ShowDetails();
 
+            M3 myM3 = new M3(260, "red", "M3");
+            myM3.Repair();
             Console.ReadKey();
         }
         
