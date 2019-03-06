@@ -24,6 +24,12 @@ namespace Polymorphism
             bmwZ3.ShowDetails();
             audiA3.ShowDetails();
 
+            BMW bmwM5 = new BMW(330, "white", "M5");
+            bmwM5.ShowDetails();
+
+            Car carB = (Car)bmwM5;
+            carB.ShowDetails();
+
             Console.ReadKey();
         }
         

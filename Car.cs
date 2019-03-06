@@ -16,9 +16,14 @@ namespace Polymorphism
             this.HP = hp;
             this.Colour = colour;
         }
-        public void ShowDetails(int hp, string colour)
+        // default constructor
+        public Car()
         {
-            Console.WriteLine("HP:" + HP + "colour: " + colour);
+
+        }
+        public void ShowDetails()
+        {
+            Console.WriteLine("HP:" + HP + "colour: " + Colour);
         }
         public virtual void Repair()
         {
